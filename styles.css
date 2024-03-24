@@ -1,20 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: aqua;
+  font-family: "Poppins", sans-serif;
 }
 .about-wrapper {
   height: 100vh;
-  display: flex;
 }
 .about-left {
   background-color: aqua;
-  background-image: linear-gradient(0px 255px 0px);
+  background-image: linear-gradient(19deg, #21d4fd 0%, aqua 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   color: #fff;
-  flex: 1;
 }
 .about-left-content > div {
   background: #12192c;
@@ -90,7 +95,7 @@ body {
 }
 .about-right {
   background: #12192c;
-  min-height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +103,6 @@ body {
   padding: 0 5rem;
   text-align: center;
   color: #fff;
-  flex: 1;
 }
 .about-right h1 {
   font-size: 5rem;
@@ -158,10 +162,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
-@media screen and (max-width: 768px) {
-  .about-wrapper {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
-  }
+
   .about-left {
     position: relative;
   }
